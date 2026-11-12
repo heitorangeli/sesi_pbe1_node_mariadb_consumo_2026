@@ -1,4 +1,4 @@
-# Aula10 - BackEnd de registros de usos de IA
+# Aula10 - BackEnd de registros de usos de IA utilizando a automação por IA
 
 ### Descrição do projeto: <br>
 O SESI precisa de um sistema para registrar equipamentos ou locais e acompanhar o consumo energético, identificando possíveis desperdícios.<hr>
