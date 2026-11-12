@@ -1,0 +1,218 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-11-12T14:58:34.372Z",
+  "__export_source": "sql-backend-gen",
+  "resources": [
+    {
+      "_id": "wrk_generated",
+      "parentId": null,
+      "modified": 1794495514371,
+      "created": 1794495514371,
+      "name": "backend_energia - API",
+      "description": "Coleção gerada automaticamente pelo gerador CLI",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "fld_0_usuario",
+      "parentId": "wrk_generated",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "name": "Usuario",
+      "description": "Rotas de CRUD para usuario",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_0_0_usuario",
+      "parentId": "fld_0_usuario",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/usuario",
+      "name": "Listar Usuario",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1794495514372,
+      "_type": "request"
+    },
+    {
+      "_id": "req_0_1_usuario",
+      "parentId": "fld_0_usuario",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/usuario/1",
+      "name": "Buscar Usuario por ID",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1794495514373,
+      "_type": "request"
+    },
+    {
+      "_id": "req_0_2_usuario",
+      "parentId": "fld_0_usuario",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/usuario",
+      "name": "Criar Usuario",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1794495514374,
+      "_type": "request"
+    },
+    {
+      "_id": "req_0_3_usuario",
+      "parentId": "fld_0_usuario",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/usuario/1",
+      "name": "Atualizar Usuario",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1794495514375,
+      "_type": "request"
+    },
+    {
+      "_id": "req_0_4_usuario",
+      "parentId": "fld_0_usuario",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/usuario/1",
+      "name": "Deletar Usuario",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1794495514376,
+      "_type": "request"
+    },
+    {
+      "_id": "fld_1_consumo",
+      "parentId": "wrk_generated",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "name": "Consumo",
+      "description": "Rotas de CRUD para consumo",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_1_0_consumo",
+      "parentId": "fld_1_consumo",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/consumo",
+      "name": "Listar Consumo",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1794495514372,
+      "_type": "request"
+    },
+    {
+      "_id": "req_1_1_consumo",
+      "parentId": "fld_1_consumo",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/consumo/1",
+      "name": "Buscar Consumo por ID",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1794495514373,
+      "_type": "request"
+    },
+    {
+      "_id": "req_1_2_consumo",
+      "parentId": "fld_1_consumo",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/consumo",
+      "name": "Criar Consumo",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1794495514374,
+      "_type": "request"
+    },
+    {
+      "_id": "req_1_3_consumo",
+      "parentId": "fld_1_consumo",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/consumo/1",
+      "name": "Atualizar Consumo",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1794495514375,
+      "_type": "request"
+    },
+    {
+      "_id": "req_1_4_consumo",
+      "parentId": "fld_1_consumo",
+      "modified": 1794495514372,
+      "created": 1794495514372,
+      "url": "http://localhost:3000/consumo/1",
+      "name": "Deletar Consumo",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1794495514376,
+      "_type": "request"
+    }
+  ]
+}
