@@ -41,21 +41,14 @@ class UsuarioController {
             res.json({ message: 'Removido com sucesso!' });
         });
     }
-    static resumoPorRisco(callback) {
-        const sql = 'SELECT nivelRisco, COUNT(*) AS total FROM UsoIA GROUP BY nivelRisco;';
-        con.query(sql, callback);
+    static login(req, res) {
+        const { email, senha } = req.body;
+        UsuarioModel.login(email, senha, (err, results) => {
+            if (err) return res.status(500).json({ error: err.message });
+            if (results.length === 0) return res.status(404).json({ message: 'Credenciais inválidas.' });
+            res.json(results[0]);
+        });
     }
-
-    static resumoPorRisco(callback) {
-    const sql = `
-        SELECT 
-            SUM(CASE WHEN nivelRisco = 'Alto' THEN 1 ELSE 0 END) AS alto,
-            SUM(CASE WHEN nivelRisco = 'Médio' THEN 1 ELSE 0 END) AS medio,
-            SUM(CASE WHEN nivelRisco = 'Baixo' THEN 1 ELSE 0 END) AS baixo
-        FROM UsoIA;
-    `;
-    con.query(sql, callback);
-}
 }
 
 module.exports = UsuarioController;

@@ -25,6 +25,10 @@ class UsuarioModel {
     const sql = "SELECT COUNT(*) AS total FROM ocorrencia WHERE status = 'Tratado';";
     con.query(sql, callback);
 }
+
+    static login(email, senha, callback) {
+        db.query('SELECT * FROM usuario WHERE email = ? AND senha = ?', [email, senha], callback);
+    }
     
 }
 

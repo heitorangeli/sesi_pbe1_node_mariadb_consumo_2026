@@ -3,6 +3,7 @@ const router = express.Router();
 const ConsumoController = require('../controllers/consumo.controller');
 
 router.get('/consumo', ConsumoController.listar);
+router.get('/consumo/media', ConsumoController.mean);
 router.get('/consumo/:id', ConsumoController.buscarPorId);
 router.post('/consumo', ConsumoController.criar);
 router.put('/consumo/:id', ConsumoController.atualizar);
