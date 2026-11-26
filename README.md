@@ -109,9 +109,6 @@ npm run dev
 - ### Listar todos os registros de consumo:
 ![GET](docs/get_consumo.png)
 
-- ### Buscar registro de consumo por ID:
-![GET](docs/get_post.png)
-
 - ### Cadastrar um novo registro de consumo:
 ![POST](docs/consumo_post.png)
 
@@ -133,5 +130,5 @@ npm run dev
 ![MER DER](docs/mer_der.png)
 
 ## Diagrama de classes e MER DER conceitual:
-![DC](docs/DC3.png)
-![MER](docs/merDer.png)
+![DC](docs/DC.png)
+![MER](docs/der_energia.png)
