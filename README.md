@@ -61,31 +61,35 @@ npm run dev
 - JSON
 - Insomnia
 
-## Rotas - usuarios
+## Rotas - Usuários
 
 | Método | Rota | Descrição |
 | :--- | :--- | :--- |
-| **GET** | `/usuarios/login` | Faz o login do usuário. |
 | **GET** | `/usuarios` | Retorna a lista de usuários. |
-| **GET** | `/usuarios` | Retorna um usuário específico pelo id. |
-| **DELETE** | `/usuario/id` | Remove o usuário referente ao id |
+| **GET** | `/usuarios/:id` | Retorna um usuário específico pelo ID. |
 | **POST** | `/usuarios` | Cadastra um novo usuário com auto increment. |
-| **PUT** | `/usuarios/id` | Atualiza as informações do usuário pelo id. |
+| **PUT** | `/usuarios/:id` | Atualiza as informações de um usuário pelo ID. |
+| **DELETE** | `/usuarios/:id` | Remove o usuário referente ao ID. |
+| **POST** | `/usuarios/login` | Faz o login do usuário. |
 
-## Rotas - registros
+## Rotas - Consumo
 
 | Método | Rota | Descrição |
 | :--- | :--- | :--- |
-| **GET** | `/usoia` | Retorna a lista de resíduos. |
-| **GET** | `/usoia/resumo` | Retorna a ocorrência específica pela situação. |
-| **DELETE** | `/usoia/id` | Remove a ocorrência referente ao id |
-| **POST** | `/usoia` | Cadastra uma nova ocorrência com auto increment. |
-| **PATCH** | `/usoia/id` | Atualiza as informações da ocorrência pelo id. |
+| **GET** | `/consumo` | Retorna a lista de registros de consumo. |
+| **GET** | `/consumo/:id` | Retorna um registro de consumo específico pelo ID. |
+| **GET** | `/consumo/resumo` (ou `/consumo/media`) | Retorna o resumo com a média de consumo em kWh (RF004). |
+| **POST** | `/consumo` | Cadastra um novo registro de consumo com auto increment. |
+| **PUT** | `/consumo/:id` | Atualiza as informações de um registro de consumo pelo ID. |
+| **DELETE** | `/consumo/:id` | Remove o registro de consumo referente ao ID. |
 
 ## Exemplos de requisição e testes com o Insomnia
 
 - ### Listar todos os usuários:
 ![GET](docs/get_user.png)
+
+- ### Buscar usuário por ID:
+![GET](docs/get_user_id.png)
 
 - ### Cadastrar um novo usuário:
 ![POST](docs/post_user.png)
@@ -102,8 +106,31 @@ npm run dev
 - ### Login negado:
 ![POST](docs/login_denied.png)
 
-- ### Remover uma ocorrência de resíduo:
-![DELETE](docs/delete_waste.png)
+- ### Listar todos os registros de consumo:
+![GET](docs/get_consumo.png)
+
+- ### Buscar registro de consumo por ID:
+![GET](docs/get_post.png)
+
+- ### Cadastrar um novo registro de consumo:
+![POST](docs/consumo_post.png)
+
+- ### Atualizar um registro de consumo:
+![PUT](docs/put_consumo.png)
+
+- ### Remover um registro de consumo:
+![DELETE](docs/consumo_delete.png)
+
+- ### Resumo / Média de consumo em kWh:
+![GET](docs/get_mean.png)
+
+## Diagrama de classes e MER DER conceitual
+
+- ### Diagrama de Classes:
+![Diagrama de Classes](docs/diagrama_classes.png)
+
+- ### MER / DER:
+![MER DER](docs/mer_der.png)
 
 ## Diagrama de classes e MER DER conceitual:
 ![DC](docs/DC3.png)
