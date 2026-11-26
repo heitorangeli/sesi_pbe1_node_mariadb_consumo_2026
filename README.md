@@ -124,11 +124,7 @@ npm run dev
 ## Diagrama de classes e MER DER conceitual
 
 - ### Diagrama de Classes:
-![Diagrama de Classes](docs/diagrama_classes.png)
+![Diagrama de Classes](docs/DC.jpg)
 
 - ### MER / DER:
-![MER DER](docs/mer_der.png)
-
-## Diagrama de classes e MER DER conceitual:
-![DC](docs/DC.png)
-![MER](docs/der_energia.png)
+![MER DER](docs/der_energia.png)
