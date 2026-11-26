@@ -20,6 +20,9 @@ class ConsumoModel {
     static async delete(id, callback) {
         db.query('DELETE FROM consumo WHERE id = ?', [id], callback);
     }
+    static async mean(callback) {
+        db.query('SELECT AVG(consumoKwh) AS mediaKwh FROM consumo', callback);
+    }
 }
 
 module.exports = ConsumoModel;

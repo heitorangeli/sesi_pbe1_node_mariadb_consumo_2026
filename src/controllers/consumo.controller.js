@@ -41,7 +41,17 @@ class ConsumoController {
             res.json({ message: 'Removido com sucesso!' });
         });
     }
-    
+
+    static mean(req, res) {
+        ConsumoModel.mean((err, results) => {
+            if (err) {
+                return res.status(500).json({ error: err.message });
+            }
+            return res.json({
+                mediaKwh: Number(results[0].mediaKwh) || 0
+            });
+        });
+    }
 }
 
 module.exports = ConsumoController;
